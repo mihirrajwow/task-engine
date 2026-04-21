@@ -6,7 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Logger;
 
 public class WorkerPool {
@@ -18,6 +20,13 @@ public class WorkerPool {
     private final MetricsTracker metrics;
 
     private ExecutorService executor;
+    private ScheduledExecutorService retryScheduler;
+
+    // Tracks tasks that are mid-flight in the retryScheduler (scheduled but not yet
+    // back in the queue). Workers include this in their exit condition to avoid
+    // leaving before retried tasks have someone to process them.
+    private final AtomicInteger pendingRetries = new AtomicInteger(0);
+
     private final List<Worker> workers = new ArrayList<>();
 
     public WorkerPool(int threadCount, TaskQueue queue, MetricsTracker metrics) {
@@ -27,12 +36,11 @@ public class WorkerPool {
     }
 
     public void start() {
-        // Fixed pool = predictable resource usage.
-        // Cached pool creates unbounded threads under spike load (bad for production).
-        executor = Executors.newFixedThreadPool(threadCount);
+        executor       = Executors.newFixedThreadPool(threadCount);
+        retryScheduler = Executors.newScheduledThreadPool(2);
 
         for (int i = 0; i < threadCount; i++) {
-            Worker worker = new Worker(queue, metrics);
+            Worker worker = new Worker(queue, metrics, retryScheduler, pendingRetries);
             workers.add(worker);
             executor.submit(worker);
         }
@@ -42,23 +50,41 @@ public class WorkerPool {
     public void shutdown() {
         logger.info("Initiating graceful shutdown...");
 
-        // Step 1: Signal all workers to stop accepting new tasks
         workers.forEach(Worker::stop);
-
-        // Step 2: Stop accepting new tasks to executor
         executor.shutdown();
 
-        // Step 3: Wait up to 30 seconds for workers to drain the queue
         try {
             if (!executor.awaitTermination(30, TimeUnit.SECONDS)) {
-                // Step 4: Force kill if workers are stuck
                 logger.warning("Workers did not finish in 30s — forcing shutdown.");
+                // shutdownNow() interrupts workers. Any task a worker was mid-processing
+                // gets an InterruptedException in simulateWork(), which Worker.processTask()
+                // catches and counts as a dead-letter — so it won't be silently lost.
                 executor.shutdownNow();
             }
         } catch (InterruptedException e) {
             executor.shutdownNow();
             Thread.currentThread().interrupt();
         }
+
+        // Any tasks still queued in the retryScheduler that never fired are tasks
+        // that failed processing and were waiting for their backoff delay.
+        // shutdownNow() returns those pending Runnables. Each one represents one task
+        // that will never be processed — count each as a dead-letter.
+        List<Runnable> abandonedRetries = retryScheduler.shutdownNow();
+        if (!abandonedRetries.isEmpty()) {
+            logger.warning("Abandoning " + abandonedRetries.size() + " scheduled retries — counting as dead letters.");
+            for (Runnable ignored : abandonedRetries) {
+                metrics.recordDeadLetter();
+                pendingRetries.decrementAndGet();
+            }
+        }
+
+        try {
+            retryScheduler.awaitTermination(2, TimeUnit.SECONDS);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
+
         logger.info("WorkerPool shutdown complete.");
     }
 }

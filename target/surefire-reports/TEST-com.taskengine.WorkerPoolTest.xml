@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.taskengine.WorkerPoolTest" time="49.148" tests="3" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="20"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Docs\project\concurrent document processing engine\task-engine\target\test-classes;C:\Docs\project\concurrent document processing engine\task-engine\target\classes;C:\Users\KIIT0001\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.0\junit-jupiter-5.10.0.jar;C:\Users\KIIT0001\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\KIIT0001\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\KIIT0001\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\KIIT0001\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\KIIT0001\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\KIIT0001\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\KIIT0001\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="20"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-20\bin"/>
+    <property name="sun.java.command" value="C:\Users\KIIT0001\AppData\Local\Temp\surefire10418159687266895836\surefirebooter-20260421213702580_3.jar C:\Users\KIIT0001\AppData\Local\Temp\surefire10418159687266895836 2026-04-21T21-37-02_348-jvmRun1 surefire-20260421213702580_1tmp surefire_0-20260421213702580_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Docs\project\concurrent document processing engine\task-engine\target\test-classes;C:\Docs\project\concurrent document processing engine\task-engine\target\classes;C:\Users\KIIT0001\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.0\junit-jupiter-5.10.0.jar;C:\Users\KIIT0001\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\KIIT0001\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\KIIT0001\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\KIIT0001\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\KIIT0001\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\KIIT0001\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\KIIT0001\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\KIIT0001"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-04-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-20"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Docs\project\concurrent document processing engine\task-engine"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\KIIT0001\AppData\Local\Temp\surefire10418159687266895836\surefirebooter-20260421213702580_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="20.0.1+9-29"/>
+    <property name="user.name" value="KIIT0001"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\KIIT0001\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\KIIT0001\AppData\Local\Temp\"/>
+    <property name="java.version" value="20.0.1"/>
+    <property name="user.dir" value="C:\Docs\project\concurrent document processing engine\task-engine"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-20\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\KIIT0001\anaconda3\condabin;c:\Users\KIIT0001\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\KIIT0001\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\KIIT0001\AppData\Local\Programs\Microsoft VS Code;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\MongoDB\Tools\100\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Users\KIIT0001\Downloads\ngrok.exe;C:\Users\KIIT0001\AppData\Local\Programs\Python\Python313\Scripts;C:\Users\KIIT0001\AppData\Local\Programs\Python\Python313;C:\Users\KIIT0001\AppData\Local\Programs\Python\Python311;C:\Users\KIIT0001\AppData\Local\Programs\Python\Launcher;C:\Users\KIIT0001\AppData\Local\Microsoft\WindowsApps;C:\Users\KIIT0001\AppData\Local\Programs\Microsoft VS Code\bin;C:\mingw64\bin;C:\Program Files\Notepad++;C:\Users\KIIT0001\AppData\Roaming\npm;C:\Users\KIIT0001\AppData\Local\GitHubDesktop\bin;C:\Program Files\Java\jdk-20\bin;C:\platform-tools-latest-windows\platform-tools;C:\mongosh;C:\Program Files\MongoDB\Server\8.2\bin;C:\Program Files\MongoDB\Tools\100\bin;C:\Program Files\Apache Software Foundation\Tomcat 11.0\lib;C:\Users\KIIT0001\AppData\Local\Programs\Ollama;C:\Users\KIIT0001\AppData\Local\Programs\Antigravity\bin;C:\Users\KIIT0001\AppData\Local\Microsoft\WinGet\Packages\cURL.cURL_Microsoft.Winget.Source_8wekyb3d8bbwe\curl-8.19.0_3-win64-mingw\bin;C:\Users\KIIT0001\Downloads\ngrok.exe;C:\Program Files\apache-maven-3.9.15\bin;c:\Users\KIIT0001\.vscode\extensions\vscjava.vscode-java-debug-0.59.0\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="20.0.1+9-29"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="64.0"/>
+  </properties>
+  <testcase name="testGracefulShutdownAccountsForAllTasks" classname="com.taskengine.WorkerPoolTest" time="4.065">
+    <system-err><![CDATA[Apr 21, 2026 9:37:03 PM com.taskengine.worker.WorkerPool start
+INFO: WorkerPool started with 3 threads.
+Apr 21, 2026 9:37:03 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [24129638] type=VALIDATE priority=HIGH retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:04 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [c31c058d] type=VALIDATE priority=HIGH retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:04 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [26c52532] type=VALIDATE priority=HIGH retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:04 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [de7932ff] type=VALIDATE priority=HIGH retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:05 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [cf2d87d4] type=VALIDATE priority=HIGH retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:05 PM com.taskengine.worker.WorkerPool shutdown
+INFO: Initiating graceful shutdown...
+Apr 21, 2026 9:37:05 PM com.taskengine.worker.Worker run
+INFO: pool-2-thread-1 shutting down.
+Apr 21, 2026 9:37:07 PM com.taskengine.worker.Worker run
+INFO: pool-2-thread-2 shutting down.
+Apr 21, 2026 9:37:07 PM com.taskengine.worker.Worker run
+INFO: pool-2-thread-3 shutting down.
+Apr 21, 2026 9:37:07 PM com.taskengine.worker.WorkerPool shutdown
+INFO: WorkerPool shutdown complete.
+]]></system-err>
+  </testcase>
+  <testcase name="testConcurrentSubmissionNoTasksLost" classname="com.taskengine.WorkerPoolTest" time="45.069">
+    <system-err><![CDATA[Apr 21, 2026 9:37:07 PM com.taskengine.worker.WorkerPool start
+INFO: WorkerPool started with 5 threads.
+Apr 21, 2026 9:37:08 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [fb007e01] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:08 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [c78311d9] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:09 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [2f888365] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:09 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [fd89b898] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:09 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [a02ca89e] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:10 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [7ad5552b] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:10 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [4c824fde] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:10 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [1e422709] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:11 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [fd8efa29] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:11 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [220f8913] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:11 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [f4a0b6d2] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:11 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [87e58d6d] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:12 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [4a46c53c] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:12 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [62b553f8] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:13 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [1fa3dae6] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:13 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [0a548b3c] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:13 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [05114d0c] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:13 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [124e617d] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:13 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [05114d0c] type=PARSE priority=MEDIUM retries=2 in 800ms (attempt 2)
+Apr 21, 2026 9:37:14 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [3930c32c] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:14 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [8b22fb78] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:15 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [0780bb67] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:16 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [06714246] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:17 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [06714246] type=PARSE priority=MEDIUM retries=2 in 800ms (attempt 2)
+Apr 21, 2026 9:37:17 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [22262562] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:17 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [23868cf6] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:19 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [a7019e6f] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:19 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [655ceb33] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:19 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [a7019e6f] type=PARSE priority=MEDIUM retries=2 in 800ms (attempt 2)
+Apr 21, 2026 9:37:19 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [cad622c9] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:20 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [a0781946] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:20 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [c9fcd34f] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:20 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [2a5866c9] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:20 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [ce03d521] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:21 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [4410cfb5] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:21 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [c9fcd34f] type=PARSE priority=MEDIUM retries=2 in 800ms (attempt 2)
+Apr 21, 2026 9:37:21 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [c4f2ee5c] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:21 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [3e92b6b5] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:22 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [cabf569a] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:22 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [6ec84e30] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:22 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [cabf569a] type=PARSE priority=MEDIUM retries=2 in 800ms (attempt 2)
+Apr 21, 2026 9:37:22 PM com.taskengine.worker.WorkerPool shutdown
+INFO: Initiating graceful shutdown...
+Apr 21, 2026 9:37:23 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [970eb23d] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:23 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [c391c6eb] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:23 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [3b186301] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:23 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [f609fc90] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:24 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [da18cc8b] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:24 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [ed0d53cd] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:24 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [844e9755] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:25 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [ed0d53cd] type=PARSE priority=MEDIUM retries=2 in 800ms (attempt 2)
+Apr 21, 2026 9:37:25 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [e83df6d3] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:25 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [2f00807f] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:26 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [36975177] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:26 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [d59bb15b] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:27 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [8a934d8c] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:28 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [ceb14158] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:28 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [71d57efc] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:28 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [860e7ea1] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:29 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [a96598e5] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:29 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [fd586fa6] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:29 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [7eb02993] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:29 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [4e2e3ab9] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:29 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [860e7ea1] type=PARSE priority=MEDIUM retries=2 in 800ms (attempt 2)
+Apr 21, 2026 9:37:29 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [7eb02993] type=PARSE priority=MEDIUM retries=2 in 800ms (attempt 2)
+Apr 21, 2026 9:37:29 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [dd2758a6] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:30 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [5b7e34bf] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:31 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [024134b5] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:31 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [0c3156f4] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:31 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [053c50a1] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:31 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [6e5a246b] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:31 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [b9d4a95f] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:32 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [66019a91] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:32 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [6e5a246b] type=PARSE priority=MEDIUM retries=2 in 800ms (attempt 2)
+Apr 21, 2026 9:37:32 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [7cf242aa] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:33 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [14d0b8f5] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:33 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [d0ddfcac] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:34 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [d0ddfcac] type=PARSE priority=MEDIUM retries=2 in 800ms (attempt 2)
+Apr 21, 2026 9:37:35 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [573c8c17] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:35 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [ef990f86] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:36 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [2c18d641] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:37 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [03387b31] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:37 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [c94fb0e5] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:37 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [977a076a] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:38 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [99a2bc80] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:39 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [03e8fe3e] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:39 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [a7ec7c5d] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:39 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [c746e522] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:42 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [3ab19194] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:43 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [c95ffcc8] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:43 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [193df8d1] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:43 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [61c9cb12] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:44 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [39193fd1] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:45 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [78462dd3] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:45 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [88adb2a9] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:45 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [90847ccd] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:45 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [1b5ce343] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:46 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [d3bde5cf] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:47 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [42e363a5] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:47 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [fbc9aaab] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:49 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [9256aa7d] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:49 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [ed90f50d] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:50 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [2609b579] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:50 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [43f0bf1d] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:51 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [eb959f3e] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:51 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [67335740] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:51 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [9fd5e933] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:51 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [fedeb605] type=PARSE priority=MEDIUM retries=1 in 400ms (attempt 1)
+Apr 21, 2026 9:37:52 PM com.taskengine.worker.Worker handleFailure
+WARNING: Retrying [9fd5e933] type=PARSE priority=MEDIUM retries=2 in 800ms (attempt 2)
+Apr 21, 2026 9:37:52 PM com.taskengine.worker.WorkerPool shutdown
+WARNING: Workers did not finish in 30s — forcing shutdown.
+Apr 21, 2026 9:37:52 PM com.taskengine.worker.Worker run
+INFO: pool-4-thread-1 shutting down.
+Apr 21, 2026 9:37:52 PM com.taskengine.worker.WorkerPool shutdown
+WARNING: Abandoning 1 scheduled retries — counting as dead letters.
+Apr 21, 2026 9:37:52 PM com.taskengine.worker.Worker run
+INFO: pool-4-thread-3 shutting down.
+Apr 21, 2026 9:37:52 PM com.taskengine.worker.Worker run
+INFO: pool-4-thread-5 shutting down.
+Apr 21, 2026 9:37:52 PM com.taskengine.worker.Worker run
+INFO: pool-4-thread-2 shutting down.
+Apr 21, 2026 9:37:52 PM com.taskengine.worker.Worker run
+INFO: pool-4-thread-4 shutting down.
+Apr 21, 2026 9:37:52 PM com.taskengine.worker.WorkerPool shutdown
+INFO: WorkerPool shutdown complete.
+]]></system-err>
+  </testcase>
+  <testcase name="testQueuePriorityOrdering" classname="com.taskengine.WorkerPoolTest" time="0.007"/>
+</testsuite>

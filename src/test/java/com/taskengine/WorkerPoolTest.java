@@ -60,7 +60,7 @@ class WorkerPoolTest {
 
         latch.await(); // wait for all submitters to finish
         submitters.shutdown();
-        Thread.sleep(5000); // let workers process
+        Thread.sleep(15000); // let workers process
         pool.shutdown();
 
         long processed = metrics.getCompleted() + metrics.getDeadLettered();
